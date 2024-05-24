@@ -5,3 +5,25 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+/* Styles pour le thème jour */
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Styles pour le thème nuit */
+html.nuit body{
+    background-color: #191970;
+    color: #ffffff;
+}
+html.nuit .gold{
+    background-color: #191970;
+    color: #FFC40C;
+}
+
+.NAV{
+    display: flex;
+    justify-content: space-between;
+}
+
