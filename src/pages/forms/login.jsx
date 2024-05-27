@@ -1,6 +1,6 @@
 const Log = () => {
     return (
-        <h1>Loggggggggggggggggg</h1>
+        <h1>FORMULAIRE SE CONNECTER</h1>
     )
 }
 
