@@ -2,7 +2,7 @@
 const Concept = () => {
     return(
         <>
-        <h1>Conceptttttt</h1>
+        <h1> NOTRE CONCEPT </h1>
         </>
     )
 }

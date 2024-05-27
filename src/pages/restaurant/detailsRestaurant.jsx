@@ -1,6 +1,6 @@
 const Details = () => {
     return(
-        <h1>Details::::::</h1>
+        <h1> PAGE DÉTAILS D'UN RESTAURANT </h1>
     )
 }
 

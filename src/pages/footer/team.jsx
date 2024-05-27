@@ -2,7 +2,7 @@
 const Team = () => {
     return(
         <>
-        <h1>Teammmm</h1>
+        <h1> NOTRE ÉQUIPE </h1>
         </>
     )
 }
