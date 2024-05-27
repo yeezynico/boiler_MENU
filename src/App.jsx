@@ -12,21 +12,27 @@ import Concept from './pages/footer/concept';
 import Team from './pages/footer/team';
 import Contact from './pages/footer/contact';
 import Details from './pages/restaurant/detailsRestaurant';
-
-
+import { useState } from 'react';
 
 
 
 function App() {
 
+  const [isNightMode, setIsNightMode] = useState(false);
+
+  const toggleTheme = () => {
+    setIsNightMode(!isNightMode);
+    const html = document.getElementsByTagName('html')[0];
+    html.classList.toggle('nuit');
+  };
 
   return (
     <>
       <BrowserRouter>
         <header>
-          <Nav />
+          <Nav isNightMode={isNightMode} toggleTheme={toggleTheme} />
         </header>
-        
+
         <Routes>
           {/* routes NAV */}
           <Route path='/restaurants' element={<Restaurants />} />
@@ -44,7 +50,7 @@ function App() {
         </Routes>
 
         <footer>
-          <Footer />
+          <Footer isNightMode={isNightMode} />
         </footer>
       </BrowserRouter>
     </>
