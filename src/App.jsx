@@ -17,7 +17,6 @@ import { useState } from 'react';
 
 
 function App() {
-
   const [isNightMode, setIsNightMode] = useState(false);
 
   const toggleTheme = () => {
@@ -57,4 +56,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
