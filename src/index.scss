@@ -22,7 +22,7 @@ $font: "Raleway", sans-serif;
 $title-font: 'Nectarine';
 
 
-/* Styles pour le thème jour */
+/* LIGHT THEME STYLES */
 body {
     background-color: $bg-light-font-night;
     color: $font-light;
@@ -30,7 +30,7 @@ body {
     margin: 1.2%;
 }
 
-/* Styles pour le thème nuit */
+/* NIGHT THEME STYLES */
 html.nuit body {
     background-color: $bg-night;
     color: $bg-light-font-night;
@@ -39,7 +39,6 @@ html.nuit body {
 html.nuit .gold {
     background-color: $bg-night;
     color: $title-icons-night;
-    
 }
 
 
@@ -52,6 +51,117 @@ html.nuit .gold {
   padding-right: 10px;
   font-size: 1.2em;
 }
+
+/* start language btn */
+.switch {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 70px;
+  height: 36px;
+  transform: translateX(calc(50% - 10px));
+}
+
+.toggle {
+  opacity: 0;
+}
+
+.slider.day {
+  box-sizing: border-box;
+  border-radius: 100px;
+  border: 2px solid $font-light;
+  box-shadow: 4px 4px $title-icons-light;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $bg-light-font-night;
+  transition: 0.3s;
+}
+
+.slider.night {
+  box-sizing: border-box;
+  border-radius: 100px;
+  border: 2px solid $bg-light-font-night;
+  box-shadow: 4px 4px $title-icons-night;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $bg-night;
+  transition: 0.3s;
+}
+
+.slider:before {
+  content: "FR";
+  box-sizing: border-box;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  left: 2px;
+  bottom: 1px;
+  border: 2px solid $title-icons-light;
+  border-radius: 100px;
+  background-color: $bg-light-font-night;
+  color: $title-icons-light;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 25px;
+  transition: 0.3s;
+}
+
+.slider.night:before {
+  content: "FR";
+  box-sizing: border-box;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  left: 2px;
+  bottom: 1px;
+  border: 2px solid $title-icons-night;
+  border-radius: 100px;
+  background-color: $bg-night;
+  color: $title-icons-night;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 25px;
+  transition: 0.3s;
+}
+
+.toggle:checked + .slider {
+  background-color: $bg-light-font-night;
+  transform: translateX(-32px);
+}
+
+.toggle:checked + .slider.night {
+  background-color: $bg-night;
+  transform: translateX(-32px);
+}
+
+.toggle:checked + .slider:before {
+  content: "EN";
+  transform: translateX(32px);
+  color: $font-light;
+  border-color: $font-light;
+}
+
+.toggle:checked + .slider.night:before {
+  content: "EN";
+  transform: translateX(32px);
+  color: $bg-light-font-night;
+  border-color: $bg-light-font-night;
+  background-color: $bg-night;
+}
+/* end language btn */
 
 .nav-links {
   display: flex;

@@ -1,6 +1,11 @@
+import React from "react";
+import { useTranslation } from "react-i18next";
+
 const Sign = () => {
+  const { t } = useTranslation();
+
   return (
-      <h1>FORMULAIRE S'INSCRIRE</h1>
+      <h1> {t('signupForm')} </h1>
   )
 }
 
