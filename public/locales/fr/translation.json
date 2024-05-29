@@ -13,5 +13,8 @@
   "signupForm": "S'INSCRIRE",
   "login": "Se Connecter",
   "signup": "S'Inscrire",
-  "hiver": "Hiver"
+  "hiver": "Hiver",
+  "access": "ACCESSIBILITÉ",
+  "opendys": "DYSLEXIE",
+  "colorBlind": "DALTONISME"
 }

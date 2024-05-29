@@ -13,5 +13,8 @@
   "signupForm": "SIGN UP",
   "login": "Log In",
   "signup": "Sign Up",
-  "hiver": "Winter"
+  "hiver": "Winter",
+  "access": "ACCESSIBILITY",
+  "opendys": "DYSLEXIA",
+  "colorBlind": "COLOR BLINDNESS"
 }
